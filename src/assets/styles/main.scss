@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("../fonts/RadomirTinkov-Gilroy-Light.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/RadomirTinkov-Gilroy-Light.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/RadomirTinkov-Gilroy-Light.otf") format("opentype"), /* Open Type Font */
+  url("../fonts/RadomirTinkov-Gilroy-Light.svg") format("svg"), /* Legacy iOS */
+  url("../fonts/RadomirTinkov-Gilroy-Light.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("../fonts/RadomirTinkov-Gilroy-Light.woff") format("woff"), /* Modern Browsers */
+  url("../fonts/RadomirTinkov-Gilroy-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Gilroy-Light' !important;
+}
+
+.ant-modal {
+  background: linear-gradient(177.76deg, #2E354B 0%, #30374C 100%);
+  box-shadow: 25px 25px 50px rgba(24, 28, 38, 0.5);
+  border-radius: 10px;
+  width: 695px !important;
+  margin: 50px auto!important;
+
+  .ant-modal-content {
+    box-shadow: none !important;
+    background: none !important;
+
+    .ant-modal-header {
+      background: none;
+      border: none;
+    }
+
+    .ant-modal-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ant-modal-footer {
+      display: none;
+    }
+
+    .ant-modal-title {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 68px;
+      height: 34px;
+      background: #83F6B1;
+      border-radius: 0 0 5px 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ant-modal-close-x {
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 40px;
+    }
+
+    .timerBlock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .timerIcon {
+        background: url("../../assets/icons/clock.png") center no-repeat;
+        height: 15px;
+        width: 15px;
+        background-size: contain;
+        margin-right: 10px;
+      }
+
+      .timerInfo {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #83F6B1;
+
+      }
+    }
+
+    .modalTitle {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 100%;
+      text-align: center;
+      color: #EEEEEE;
+    }
+
+    .selectMenu {
+      width: 392px;
+      height: 40px;
+      background: #3C4561;
+      border-radius: 5px;
+      position: relative;
+      margin-top: 40px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        background: url("../../assets/icons/card.png") center no-repeat;
+        height: 15px;
+        width: 20px;
+        top: 10px;
+        left: 10px;
+      }
+
+      .ant-select-selector {
+        background: 0;
+        border: 0;
+        height: 100%;
+      }
+
+      .ant-select-selection-item {
+        margin: 10px 0 6px 35px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 100%;
+        color: #EEEEEE;
+      }
+
+      .ant-select-arrow {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .modalCards {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .modalInfo-cash {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+
+    span {
+      color: #83F6B1;
+    }
+  }
+
+  .modalBuy {
+    width: 133px;
+    height: 42px;
+    background: #83F6B1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #282A3B;
+    border-radius: 25px;
+    margin: 30px auto;
+    position: relative;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      background: #83F6B1;
+      opacity: 0.7;
+      filter: blur(40px);
+      border-radius: 5px;
+      height: 25px;
+      width: 100%;
+    }
+  }
+
+  .modalDescription {
+    text-align: center;
+    .modal-descText {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 100%;
+      text-align: center;
+      color: #91ACD4;
+      opacity: 0.5;
+    }
+
+    .modal-descLink {
+      text-decoration: none;
+      cursor: pointer;
+      opacity: 0.5;
+      border-bottom: 2px dashed #91ACD4;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #91ACD4;
+    }
+  }
+}
+
+
+
+
