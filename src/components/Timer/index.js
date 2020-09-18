@@ -1,4 +1,6 @@
 import React from "react";
+import './style.scss'
+
 
 class Timer extends React.Component {
     constructor() {
@@ -26,8 +28,6 @@ class Timer extends React.Component {
         return obj;
     }
 
-
-
     componentDidMount() {
         let timeLeftVar = this.secondsToTime(this.state.seconds);
         this.setState({time: timeLeftVar});
@@ -38,8 +38,6 @@ class Timer extends React.Component {
             this.timer = setInterval(this.countDown, 1000);
         }
     }
-
-
 
     countDown() {
         let seconds = this.state.seconds - 1;
@@ -57,8 +55,11 @@ class Timer extends React.Component {
     render() {
         this.startTimer();
         return (
-            <div className="timerInfo">
-               00:{this.state.time.m}:{this.state.time.s}
+            <div className="timerBlock">
+                <div className="timerIcon"></div>
+                <div className="timerInfo">
+                    00:{this.state.time.m}:{this.state.time.s}
+                </div>
             </div>
         );
     }
